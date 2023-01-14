@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+<!-- ESTO LO QUE HACE ES DARLE CONTINUIDAD A OTRA SECCION DE LA PAG WEB-->
+{% block content %}
+<div class="center">
+    <div class="texto-sobre">
+        <h1>
+            ¡Hola! soy Hugo <br />Esta es mi <span style="color: blue;">PáginaWeb</span>
+        </h1>
+        <p>
+            Amar, nunca me coube <br>
+
+            Mas sempre transbordou
+            O rio de lembranças
+            Que um dia me afogou
+            
+            E nesta correnteza
+            Fiquei a navegar
+            Embora, com certeza,
+            Não possa me salvar
+            
+            Amar nunca me trouxe
+            Completo esquecimento
+            Mas antes me somou
+            Ao antigo tormento
+            
+            E assim, cada vez mais,
+            Me prendo neste nó
+            E cada grito meu
+            Parece ser maior
+                        <br>
+                        (Mario Quintana)
+        </p>
+        <br>
+        <form action="greet" method="post">
+            <X>{% for message in get_flashed_messages()%}
+                {{message}}
+                {% endfor %}</X>
+            <input type="text" value="Escribe un mensaje para mi..." name="name_input">
+            <br>
+            <input type="submit" value="Enviar" id="greet">
+        </form>
+    </div>
+</div>
+</section>
+
+<div class="container">
+<!--img src="https://scontent.flim22-2.fna.fbcdn.net/v/t39.30808-6/316063905_1134274384123806_4401586200804283582_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGXFNzm0L_5-2TBxNmtep8skD7YpgsjZWGQPtimCyNlYbotB4Y8tCMJzqQ5GBYUZovyIl_axx6iDjZjEbWojz8Y&_nc_ohc=lIQBNdVNkQYAX-x6RnD&_nc_zt=23&_nc_ht=scontent.flim22-2.fna&oh=00_AfDWENXvPuycBMbxxcBors8LaiKqkzrTJOc6siUIwcPn6w&oe=63C38481" width="400" -->
+<br>
+</div>
+{% endblock %}

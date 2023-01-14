@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+<!-- ESTO LO QUE HACE ES DARLE CONTINUIDAD A OTRA SECCION DE LA PAG WEB-->
+{% block content %}
+<div class="center">
+    <div class="texto-sobre">
+        <h1>
+            ¡Gracias! <br />tu mensaje está <span style="color: blue;">¡Lindo!</span>
+        </h1>
+        <br>
+        <form action="greet" method="post">
+            <X>{% for message in get_flashed_messages()%}
+                {{message}}
+                {% endfor %}
+            </X>
+    <!-- PARA EMOJIS-->
+        <P style="font-size:100px">&#128525; &#128151;</P>
+        </form>
+    </div>
+</div>
+</section>
+
+{% endblock %}
